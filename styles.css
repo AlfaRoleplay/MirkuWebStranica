@@ -61,6 +61,8 @@ footer{
     flex-grow: inherit;
     flex-shrink: inherit;
     flex: 30%;
+    height: 500px;
+    max-width: 70%;
 }
 
 .image-caption-header{
