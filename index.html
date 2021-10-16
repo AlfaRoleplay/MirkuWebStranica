@@ -4,7 +4,7 @@
   <title>Alfa RolePlay | FiveM</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
   <body class="body">
@@ -16,26 +16,22 @@
           <img src="media/speedometer.png"/>
           <figcaption class="image-caption-header">Najbolja optimizacija!</figcaption>
           <figcaption class="image-caption">Naš tim developera ima ruke te se maksimalno trude da naše kastm skripte budu što brže.</figcaption>
-          <script>
-            ScrollReveal().reveal('.captioned-image');
-          </script>
         </figure>
         <figure class="captioned-image">
           <img src="media/shaking-hands.png"/>
           <figcaption class="image-caption-header">Uslužan staff!</figcaption>
           <figcaption class="image-caption">Stručno odabran stožer od strane vlasnika osigurava svim igračima da igraju unutar pravila te kažnjavaju prijestupnike brzo i pravedno. Uvijek pristupačni i topli, ali najbitnije- pravedni.</figcaption>
-          <script>
-            ScrollReveal().reveal('.captioned-image');
-          </script>
         </figure>
         <figure class="captioned-image">
           <img src="media/zabrana.png"/>
           <figcaption class="image-caption-header">Nema Whitelist!</figcaption>
           <figcaption class="image-caption">Pristup svim igračima je slobodan, možete se spojiti u svega par trenutaka, nije potrebno proči WhiteListu jer je iovako premalo igrača, a i ne da nam se baš nešta previše.</figcaption>
-          <script>
-            ScrollReveal().reveal('.captioned-image');
-          </script>
         </figure>
+          <script>
+            ScrollReveal().reveal('img',{duration:2000});
+            ScrollReveal().reveal('.captioned-image', {duration:3000});
+            ScrollReveal().reveal('.image-caption', {duration:4000});
+          </script>
       </div>
 
       <footer class="footer">
