@@ -1,6 +1,42 @@
 .header {
     overflow: hidden;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: rgb(47,19,47);
+    background: radial-gradient(circle, rgba(47,19,47,1) 55%, rgba(2,26,70,1) 100%);
     padding: 20px 10px;
   }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5em;
+    align-items: center;
+    gap: 20px; 
+    flex: 30%;
+  }
+
+img{
+    height: auto;
+    width: 256px;
+    align-self: center;
+}
+
+.image-caption{
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.captioned-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: inherit;
+    flex-shrink: inherit;
+    flex: 30%;
+}
+
+.image-caption-header{
+    font-size: 2em;
+    text-align: center;
+}
