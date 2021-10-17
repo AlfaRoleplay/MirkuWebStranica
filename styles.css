@@ -8,18 +8,20 @@ html, body {
 }
 
 .header {
-    font-family:"Diploma Regular";
+    
     margin-bottom: 10px;
     color: white;
   }
 
   .header-font{
-      font-size: 5em;
+    font-family:"Diploma Regular";
+    font-size: 5em;
+    text-shadow: 4px 4px black;
   }
 
 .body{
-    background: rgb(14,0,55);
-    background: radial-gradient(circle, rgba(14,0,55,1) 57%, rgba(197,39,39,1) 100%);
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 75%, rgba(255,0,0,1) 100%); 
     display:flex; 
     flex-direction:column; 
     min-height: 100%;
@@ -31,7 +33,7 @@ html, body {
 footer{
     margin-top:20px; 
     padding-top: 5px;
-    background-color: silver;
+    background-color: transparent;
   }
 
 .container{
@@ -58,7 +60,7 @@ footer{
     text-align: center;
     font-size: 1.5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:thistle;
+    color:gainsboro;
 }
 
 .captioned-image {
@@ -73,7 +75,7 @@ footer{
 }
 
 .image-caption-header{
-    color: thistle;
+    color: blanchedalmond;
     font-size: 2.25em;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -96,3 +98,71 @@ footer{
 .footer-left{
     flex-grow: 1;
 }
+
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    background-color: black;
+    border: 2px solid red;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    z-index: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+} 
+
+
+.hbtn i {
+    padding-right: 8px;
+} 
+
+
+.hb-fill-middle::before {
+    position: absolute;
+    content: "";
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: auto auto 0px 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+} 
+
+
+.hb-fill-middle:hover::before {
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+} 
+
+
+.hb-fill-middle2:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    transition: color 0.3s ease 0s, background 0s ease 0.3s;
+} 
+
+
+.hb-fill-middle::after {
+    position: absolute;
+    content: "";
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+} 
+
+
+.hb-fill-middle:hover::after {
+    height: 50%;
+} 
